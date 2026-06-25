@@ -1,0 +1,446 @@
+.testimonial-wrapper {
+    margin-left: -18%;
+    margin-right: -18%;
+
+    @include breakpoint (max-xl) {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .swiper {
+        overflow: initial !important;
+    }
+    
+    .testimonial-box-item {
+         border-radius: 15px;
+         border: 1px solid rgba(13, 38, 108, 0.07);
+         background: $white;
+         box-shadow: 10px 4px 60px 0px rgba(184, 184, 184, 0.25);
+         padding: 40px 70px 40px;
+         margin-top: 30px;
+
+         @include breakpoint (max-lg) {
+            padding: 40px 50px;
+         }
+
+         @include breakpoint (max-md) {
+            padding: 40px 40px;
+         }
+
+         @include breakpoint (max-sm) {
+            padding: 40px 30px;
+         }
+
+        .content {
+            p {
+                font-size: 24px;
+                font-weight: 600;
+                line-height: 40px;
+                color: $header-color;
+
+                @include breakpoint (max-md){
+                    font-size: 20px;
+                 }
+
+                @include breakpoint (max-sm){
+                   font-size: 18px;
+                }
+            }
+
+            .client-info-item {
+                @include flex;
+                justify-content: space-between;
+                margin-top: 50px;
+
+                @include breakpoint (max-md){
+                    margin-top: 30px;
+                }
+
+                .client-info {
+                    @include flex;
+                    gap: 40px;
+
+                    @include breakpoint (max-xl){
+                       gap: 0;
+                    }
+
+                    h5 {
+                        font-size: 18px;
+                        color: $text-color;
+                        position: relative;
+                        padding-left: 80px;
+
+                        @include breakpoint (max-xl){
+                           padding-left: 30px;
+                        }
+            
+                        &::before {
+                            position: absolute;
+                            content: "";
+                            left: 0;
+                            top: 10px;
+                            width: 50px;
+                            height: 2px; 
+                            background-color: $text-color;
+
+                            @include breakpoint (max-xl){
+                                display: none;
+                            }
+                        }
+            
+                        span {
+                            font-size: 14px;
+                            font-weight: 400;
+                        }
+                    }
+                }
+
+                .icon {
+                    color: $theme-color;
+                    font-size: 65px;
+                }
+            }
+        }
+    }
+}
+
+.testimonial-card-item {
+    border-radius: 15px;
+    border: 1px solid rgba(13, 38, 108, 0.07);
+    background: $white;
+    box-shadow: 10px 4px 60px 0px rgba(184, 184, 184, 0.25);
+    padding: 40px 70px 40px;
+    position: relative;
+
+    @include breakpoint (max-xl){
+        margin-bottom: 30px;
+    }
+
+    @include breakpoint (max-md){
+        padding: 40px;
+    }
+
+    @include breakpoint (max-sm){
+        padding: 30px;
+    }
+    
+    .testimonial-content {
+
+        .icon {
+            color: $theme-color;
+            font-size: 55px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 27px;
+            font-weight: 500;
+            line-height: 40px;
+            color: $header-color-2;
+            border-bottom: 1px solid rgba(13, 38, 108, 0.07);
+            padding-bottom: 40px;
+            margin-bottom: 40px;
+
+            @include breakpoint (max-md){
+                font-size: 20px;
+                margin-bottom: 30px;
+                padding-bottom: 30px;
+             }
+
+            @include breakpoint (max-sm){
+               font-size: 18px;
+            }
+        }
+
+        .client-info {
+            @include flex;
+            gap: 20px;
+
+            h5 {
+                font-size: 18px;
+                color: $header-color-2;
+                position: relative;
+    
+                span {
+                    font-size: 14px;
+                    font-weight: 400;
+                    color: $header-color-2;
+                }
+            }
+        }
+    }
+}
+
+.testimonial-bg-section {
+    position: relative;
+
+    &::before {
+        @include before;
+        background: linear-gradient(180deg, rgba(15, 49, 58, 0.00) 22.88%, #0F313A 100%);
+    }
+}
+
+.testimonial-wrapper-2 {
+
+    .testimonial-content {
+
+        .map-image {
+            margin-top: 80px;
+
+            @include breakpoint (max-lg){
+                margin-top: 40px;
+            }
+
+            img {
+                @include imgw;
+            }
+        }
+    }
+
+    .testimonial-main-item {
+        margin-top: -100px;
+
+        @include breakpoint (max-lg){
+           margin-top: 0;
+        }
+
+        .testimonial-card-item {
+            border-radius: 15px;
+            border: 1px solid rgba(13, 38, 108, 0.07);
+            background: $white;
+            box-shadow: 10px 4px 60px 0px rgba(184, 184, 184, 0.25);
+            padding: 40px 70px 40px;
+            position: relative;
+            margin-bottom: 30px;
+            z-index: 1;
+
+            @include breakpoint (max-md){
+                padding: 40px;
+            }
+
+            @include breakpoint (max-sm){
+                padding: 30px;
+            }
+            
+            .testimonial-content {
+        
+                .icon {
+                    color: $theme-color;
+                    font-size: 55px;
+                    margin-bottom: 20px;
+                }
+        
+                p {
+                    font-size: 27px;
+                    font-weight: 500;
+                    line-height: 40px;
+                    color: $header-color-2;
+                    border-bottom: 1px solid rgba(13, 38, 108, 0.07);
+                    padding-bottom: 40px;
+                    margin-bottom: 40px;
+        
+                    @include breakpoint (max-md){
+                        font-size: 20px;
+                        padding-bottom: 30px;
+                        margin-bottom: 30px;
+                     }
+        
+                    @include breakpoint (max-sm){
+                       font-size: 18px;
+                    }
+                }
+        
+                .client-info {
+                    @include flex;
+                    gap: 20px;
+        
+                    h5 {
+                        font-size: 18px;
+                        color: $header-color-2;
+                        position: relative;
+            
+                        span {
+                            font-size: 14px;
+                            font-weight: 400;
+                            color: $header-color-2;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.testimonial-section-2 {
+    position: relative;
+
+    &::after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        content: "";
+        background: $white;
+        bottom: -86%;
+        top: initial;
+    }
+}
+
+.why-say-us-section {
+    margin-top: -100px;
+
+    .text {
+        font-size: 170px;
+        color: $header-color-2;
+        opacity: 0.05;
+        letter-spacing: -5.1px;
+        text-align: center;
+
+        @include breakpoint (max-xxxl){
+            font-size: 125px;
+        }
+
+        @include breakpoint (max-xxl){
+            font-size: 105px;
+        }
+
+        @include breakpoint (max-xl){
+          display: none;
+        }
+    }
+}
+
+.testimonial-section-3 {
+    position: relative;
+    background-attachment: fixed;
+
+    .container-fluid {
+        padding: 0 240px;
+
+        @include breakpoint (max-xxxl) {
+            padding: 0 50px;
+        }
+
+        @include breakpoint (max-xxl) {
+            padding: 0 40px;
+        }
+
+        @include breakpoint (max-xl) {
+            padding: 0 30px;
+        }
+    }
+
+    &::before {
+        @include before;
+        background: linear-gradient(180deg, rgba(1, 23, 45, 0.00) 0%, #01172D 100%);
+    }
+}
+
+.client-testimonial-wrapper {
+    position: relative;
+
+    h2 {
+        font-size: 170px;
+        color: $white;
+        letter-spacing: -5.1px;
+        text-align: center;
+
+        @include breakpoint (max-xl4){
+            font-size: 150px;
+        }
+
+        @include breakpoint (max-xl){
+            font-size: 120px;
+        }
+
+        @include breakpoint (max-md){
+            font-size: 80px;
+            
+            letter-spacing: initial;
+        }
+
+        @include breakpoint (max-sm){
+            font-size: 50px;
+        }
+    }
+}
+
+.testimonial-wrapper-3 {
+    margin-top: 60px;
+
+    @include breakpoint (max-md){
+        margin-top: 30px;
+    }
+
+    .testimonial-image {
+        max-width: 350px;
+
+        @include breakpoint (max-xl){
+           max-width: 1000px
+        }
+
+        img {
+            @include imgw;
+        }
+    }
+
+    .testimonial-content {
+
+        .client-text {
+            @include flex;
+            gap: 30px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+            padding-bottom: 30px;
+            margin-bottom: 30px;
+
+            h5 {
+                color: $white;
+            }
+
+            .star {
+                color: $theme-color-3;
+            }
+        }
+
+        p {
+            font-size: 27px;
+            color: $white;
+            font-weight: 500;
+            line-height: 148%;
+
+            @include breakpoint (max-xl) {
+                font-size: 18px;
+            }
+        }
+
+        .info-text {
+            @include flex;
+            gap: 30px;
+            margin-top: 90px;
+
+            @include breakpoint (max-xl) {
+                margin-top: 50px;
+            }
+
+            .icon {
+                color: $theme-color-3;
+                font-size: 55px;
+            }
+
+            h4 {
+                font-size: 22px;
+                font-weight: 500;
+                color: $white;
+
+                span {
+                    font-size: 14px;
+                    font-weight: 400;
+                    color: $white;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,118 @@
+
+//>>>>> Section Title Start <<<<<//
+
+.section-title {
+	position: relative;
+	z-index: 99;
+	margin-bottom: 30px;
+	margin-top: -1px;
+
+	@include breakpoint (max-md){
+		margin-bottom: 0;
+	}
+
+	span {
+		display: inline-block;
+		font-size: 18px;
+		font-weight: 600;
+		position: relative;
+		margin-bottom: 15px;
+		padding-left: 15px;
+
+		&::before {
+			position: absolute;
+			content: "";
+			left: 0;
+			top: 10px;
+			width: 5px;
+			height: 5px;
+			background-color: $theme-color;
+		}
+	}
+
+	&.style-2 {
+		span {
+			&::before {
+				background-color: $theme-color-2;
+			}
+		}
+
+		h2 {
+			color: $header-color-2
+		}
+	}
+}
+
+.section-title-area	{
+	@include flex;
+	justify-content: space-between;
+	position: relative;
+	z-index: 9;
+
+	@include breakpoint (max-lg) {
+		flex-wrap: wrap;
+		// justify-content: center;
+		// text-align: center;
+		gap: 30px;
+	}
+
+	p {
+		font-size: 16px;
+		font-weight: 600;
+		line-height: 175%;
+		color: $text-color;
+		font-style: italic;
+		border-left: 1px solid #6A47ED;
+		padding-left: 20px;
+	}
+}
+
+
+//>>>>> Section Title End <<<<<//
+
+//>>>>> Basic Css Start <<<<<//
+
+.center {
+	text-align: center;
+	margin: 0 auto;
+}
+
+.section-bg {
+	background-color: $bg-color;
+}
+
+
+.section-padding {
+	padding: 130px 0;
+
+	@include breakpoint(max-xl){
+		padding: 100px 0;
+	}
+
+	@include breakpoint(max-lg){
+		padding: 80px 0;
+	}
+}
+
+.blue-bg {
+	background-color: #0D266C;
+}
+
+.header-bg {
+	background-color: $header-color-2;
+}
+
+.hero-bg {
+	background-color: $header-color-3;
+}
+
+.theme-bg-3 {
+	background-color: $theme-color-3;
+}
+
+.section-bg-2 {
+	background-color: #0F313A;
+}
+
+//>>>>> Basic Css End <<<<<//
+

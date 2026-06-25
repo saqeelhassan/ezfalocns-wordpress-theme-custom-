@@ -1,0 +1,398 @@
+.hero-1 {
+    position: relative;
+    padding: 320px 0 120px;
+
+    @include breakpoint (max-xl){
+        padding: 200px 0;
+    }
+
+    @include breakpoint (max-lg){
+        padding: 240px 0;
+    }
+
+    @include breakpoint (max-md){
+       padding-top: 170px;
+       padding-bottom: 100px;
+    }
+
+    &::before {
+        @include before;
+        background: rgba(0, 0, 0, 0.70);
+    }
+
+    .hero-content {
+        position: relative;
+
+        @include breakpoint (max-md){
+           text-align: center;
+        }
+
+        h5 {
+            color: $white;
+            margin-bottom: 15px;
+
+            @include breakpoint (max-sm){
+                font-size: 16px;
+            }
+        }
+
+        h1 {
+            color: $white;
+            border-bottom: 1px solid $white;
+            padding-bottom: 50px;
+            margin-bottom: 50px;
+
+            @include breakpoint (max-sm){
+                padding-bottom: 30px;
+                margin-bottom: 30px;
+            }
+        }
+
+        .hero-button {
+            @include flex;
+            gap: 50px;
+
+            @include breakpoint (max-xl){
+                gap: 30px;
+            }
+
+            @include breakpoint (max-md){
+                gap: 20px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .theme-btn {
+                background-color: #13B5EA;
+            }
+
+            .text-btn {
+                font-size: 18px;
+                font-weight: 600;
+                color: $white;
+                text-transform: capitalize;
+
+                i {
+                    margin-left: 10px;
+                    transform: rotate(-45deg);
+                }
+
+                &:hover {
+                    color: $theme-color;
+                }
+            }
+        }
+    }
+}
+
+.hero-2 {
+    position: relative;
+    padding: 280px 0 120px;
+
+    @include breakpoint (max-xl){
+        padding-top: 120px;
+    }
+
+    &::before {
+        @include before;
+        background: linear-gradient(227deg, rgba(15, 49, 58, 0.10) 24.35%, rgba(15, 49, 58, 0.40) 81.21%);
+    }
+
+    .hero-content {
+        position: relative;
+
+        @include breakpoint (max-md){
+           text-align: center;
+        }
+
+        h5 {
+            color: $white;
+            margin-bottom: 15px;
+
+            @include breakpoint (max-sm){
+                font-size: 16px;
+            }
+        }
+
+        h1 {
+            color: $white;
+            font-size: 75px;
+            margin-bottom: 40px;
+            line-height: 120%;
+
+            @include breakpoint(max-lg){
+                font-size: 70px;
+            }
+        
+            @include breakpoint(max-md){
+                font-size: 60px;
+            }
+        
+            @include breakpoint(max-sm){
+                font-size: 50px;
+                margin-bottom: 30px;
+            }
+        
+            @include breakpoint(max-xxs){
+                font-size: 40px;
+                margin-bottom: 25px;
+            }
+        }
+
+        .hero-button {
+            @include flex;
+            gap: 50px;
+
+            @include breakpoint (max-xl){
+                gap: 30px;
+            }
+
+            @include breakpoint (max-md){
+                gap: 20px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .theme-btn {
+                background-color: $theme-color-2;
+            }
+
+            .text-btn {
+                font-size: 18px;
+                font-weight: 600;
+                color: $white;
+                text-transform: capitalize;
+
+                i {
+                    margin-left: 10px;
+                    transform: rotate(-45deg);
+                }
+
+                &:hover {
+                    color: $theme-color;
+                }
+            }
+        }
+    }
+
+    .hero-shipment-card {
+        padding: 40px 45px;
+        background: linear-gradient(180deg, rgba(242, 242, 242, 0.07) -0.99%, rgba(210, 210, 210, 0.07) 100%);
+        border: 1px solid rgba(210, 210, 210, 0.07);
+        backdrop-filter: blur(50px);
+        border-radius: 12px;
+        margin-bottom: -160px;
+
+        @include breakpoint(max-xl){
+           margin-bottom: 0;
+        }
+
+
+        .hero-shipment-content {
+
+            .icon {
+                font-size: 55px;
+                margin-bottom: 30px;
+                color: $white;
+            }
+
+            h5 {
+                color: $white;
+                margin-bottom: 20px;
+            }
+
+            p {
+                color: $white;
+                margin-bottom: 30px;
+            }
+
+            .form-clt {
+                position: relative;
+                @include transition;
+    
+                input,textarea {
+                    width: 100%;
+                    outline: none;
+                    border-radius: 30px;
+                    border: 1px solid rgba(255, 255, 255, 0.10);
+                    background: transparent;
+                    color: $white;
+                    padding: 16px 20px;
+                    font-weight: 400;
+                    text-transform: capitalize;
+                    position: relative;
+                    @include transition;
+                    
+                    &:hover {
+                        color: $white;
+                        border: 1px solid $white;
+    
+                        &::placeholder {
+                            color: $white;
+                        }
+                    }
+        
+                    @include breakpoint (max-md){
+                        padding: 14px 20px;
+                    }
+        
+                    @include breakpoint (max-sm){
+                        padding: 12px 18px;
+                    }
+        
+                    &::placeholder {
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.hero-3 {
+    position: relative;
+    z-index: 9;
+    padding: 150px 0;
+
+    @include breakpoint (max-xl) {
+        padding: 150px 0 100px;
+    }
+
+    @include breakpoint (max-lg) {
+        padding: 140px 0 90px;
+    }
+
+    @include breakpoint (max-sm) {
+        padding: 140px 0 80px;
+    }
+
+    .text {
+        position: absolute;
+        left: -35px;
+        right: -35px;
+        bottom: 30px;
+        font-size: 170px;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: rgba(255, 255, 255, 0.15);
+        letter-spacing: -5.1px;
+        color: transparent;
+        z-index: -1;
+
+        @include breakpoint (max-xl4){
+            display: none;
+        }
+    }
+
+    .container-fluid {
+        padding: 0 150px;
+
+        @include breakpoint (max-xxxl){
+            padding: 0 50px;
+        }
+
+        @include breakpoint (max-xxl){
+            padding: 0 40px;
+        }
+
+        @include breakpoint (max-xl){
+            padding: 0 30px;
+        }
+    }
+
+    .hero-content {
+        @include breakpoint (max-md){
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 80px;
+            color: $white;
+            letter-spacing: -1.6px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+            padding-bottom: 50px;
+            margin-bottom: 50px;
+
+            @include breakpoint(max-xxl){
+                font-size: 65px;
+            }
+
+            @include breakpoint(max-lg){
+                font-size: 55px;
+            }
+        
+            @include breakpoint(max-md){
+                font-size: 45px;
+                margin-bottom: 30px;
+                padding-bottom: 30px;
+            }
+        
+            @include breakpoint(max-sm){
+                font-size: 40px;
+            }
+        
+            @include breakpoint(max-xxs){
+                font-size: 40px;
+            }
+        }
+
+        .hero-button {
+            @include flex;
+            gap: 38px;
+
+            @include breakpoint (max-xxl){
+                gap: 20px;
+                flex-wrap: wrap;
+            }
+
+            @include breakpoint (max-md){
+               justify-content: center;
+            }
+
+            p {
+                color: $white;
+            }
+
+            .theme-btn {
+                background-color: $theme-color-3;
+
+                &::after {
+                    background-color: $white;
+                }
+
+                &:hover {
+                    color: $header-color-3;
+                }
+            }
+        }
+    }
+
+    .hero-image {
+        position: relative;
+
+        @include breakpoint (max-md){
+            text-align: center;
+        }
+
+        &::before {
+            @include before;
+            border-radius: 100%;
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.00) 100%);
+            width: 650px;
+            height: 650px;
+            left: 60%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+
+            @include breakpoint (max-xxxl) {
+                display: none;
+            }
+        }
+
+        img {
+            @include imgw;
+        }
+    }
+}
+
+
+

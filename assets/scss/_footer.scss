@@ -1,0 +1,494 @@
+.footer-widget-wrapper {
+    padding: 70px 0 100px;
+
+    @include breakpoint (max-lg){
+        padding: 50px 0 80px;
+    }
+
+    .single-footer-widget {
+        margin-top: 30px;
+        position: relative;
+
+        .widget-head {
+            margin-bottom: 30px;
+    
+            h4 {
+                color: $white;
+            }
+        }
+
+        .contact-info {
+            margin-bottom: 30px;
+
+            p {
+                color: $white;
+                margin-bottom: 5px;
+            }
+
+            h3 {
+                color: $white;
+
+                a {
+                    color: $white;
+                }
+            }
+        }
+
+        .list-items {
+
+            li {
+                @include transition;
+                font-weight: 400;
+                font-size: 16px;
+
+                a {
+                    color: $bg-color;
+                }
+
+                &:not(:last-child){
+                    margin-bottom: 13px;
+                }
+
+                &:hover {
+                    margin-left: 5px;
+
+                    a {
+                        color: $theme-color;
+                    }
+                }
+            }
+       }
+    }
+
+    &.style-2 {
+
+        .footer-newsletter {
+            @include flex;
+            justify-content: space-between;
+        }
+    }
+}
+
+.footer-middle-wrapper {
+    border-top: 1px solid rgba(255, 255, 255, 0.10);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+    position: relative;
+
+    .footer-middle-item {
+        @include flex;
+        justify-content: space-between;
+        padding: 40px 0;
+
+        @include breakpoint (max-xl){
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .footer-contact {
+            @include flex;
+            gap: 50px;
+
+            @include breakpoint (max-lg){
+                flex-wrap: wrap;
+                gap: 30px;
+                justify-content: center;
+            }
+    
+            h3 {
+                color: $white;
+            }
+        }
+    }
+}
+
+.footer-section {
+    position: relative;
+
+    &::before {
+        @include before;
+        background-color: #0D266C;
+    }
+
+    .footer-text {
+        position: absolute;
+        top: 10px;
+        left: 80px;
+        right: 80px;
+
+        @include breakpoint (max-xxl){
+            display: none;
+        }
+
+        h2 {
+            font-size: 200px;
+            font-weight: 600;
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0.07) 0%, rgba(255, 255, 255, 0.00) 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+
+            @include breakpoint (max-xl4){
+               font-size: 150px;
+            }
+        }
+    }
+}
+
+.footer-bottom {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+    padding-bottom: 70px;
+    margin-bottom: 70px;
+    position: relative;
+
+    .footer-wrapper {
+        @include flex;
+        justify-content: space-between;
+        padding: 25px 0 175px;
+        position: relative;
+
+        @include breakpoint (max-md) {
+          padding-bottom: 0;
+          flex-wrap: wrap;
+          justify-content: center;
+          text-align: center;
+          gap: 20px;
+        }
+        
+        .car-image {
+            position: absolute;
+            bottom: -67px;
+            right: 0;
+            animation: moveTruck 15s linear infinite;
+
+            @include breakpoint (max-md) {
+                display: none;
+            }
+        }
+
+        p {
+            color: $white;
+        }
+
+        .social-icon {
+            @include flex;
+            gap: 30px;
+
+            a {
+                display: inline-block;
+                color: $white;
+
+                &:hover {
+                   color: $theme-color;
+                }
+            }
+        }
+    }
+}
+
+.cta-consultations {
+    padding: 70px 0;
+    @include flex;
+    justify-content: space-between;
+
+    @include breakpoint (max-xl){
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center;
+        padding: 40px;
+        text-align: center;
+    }
+
+    &.style-2 {
+
+        h2 {
+            color: $header-color-3;
+        }
+    }
+
+    h2 {
+        color: $white;
+        font-size: 45px;
+
+        @include breakpoint (max-sm){
+            font-size: 32px;
+        }
+    }
+
+    .theme-btn {
+        background-color: $theme-color-3;
+
+        &.theme-2 {
+            background-color: $theme-color-3;
+        }
+
+        &::after {
+            background-color: $white;
+        }
+
+        &:hover {
+            color: $header-color;
+        }
+    }
+}
+
+
+.footer-widget-wrapper-2 {
+    padding: 40px 0 70px;
+    border-top: 1px solid rgba(255, 255, 255, 0.10);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+
+    .footer-single-widget-2 {
+        margin-top: 30px;
+
+        .widget-head {
+            margin-bottom: 20px;
+
+            h4 {
+                font-size: 20px;
+                color: $white;
+            }
+        }
+
+        .contact-items {
+            p {
+                color: $white;
+
+                .br {
+                    display: block !important;
+                }
+
+                a {
+                    color: $white;
+                }
+
+                b {
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}
+
+.footer-bottom-2 {
+    padding-top: 25px;
+
+    .footer-bottom-wrapper-2 {
+        @include flex;
+        justify-content: space-between;
+
+        @include breakpoint (max-sm){
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 25px;
+            text-align: center;
+        }
+
+        p {
+            color: $white;
+        }
+
+        .social-icon {
+            @include flex;
+            gap: 10px;
+
+            a {
+                color: $white;
+
+                &:hover {
+                    color: $theme-color;
+                }
+            }
+        }
+    }
+}
+
+.footer-text {
+    text-align: center;
+    display: block;
+    letter-spacing: -5.1px;
+    font-size: 170px;
+    font-weight: 600;
+    padding-bottom: 20px;
+    color: rgba(255, 255, 255, 0.05);
+
+    @include breakpoint (max-xl4){
+        font-size: 130px;
+        margin-top: 20px;
+        letter-spacing: -1.9px;
+    }
+
+    @include breakpoint (max-xxl){
+        font-size: 100px;
+    }
+
+    @include breakpoint (max-lg){
+        font-size: 70px;
+    }
+
+    @include breakpoint (max-md){
+        font-size: 60px;
+    }
+
+    @include breakpoint (max-sm){
+        font-size: 40px;
+    }
+
+    @include breakpoint (max-xxs){
+        font-size: 30px;
+    }
+}
+
+.footer-section-2 {
+    background-color: #0F313A;
+}
+
+.footer-widget-wrapper-3 {
+    padding: 40px 0 70px;
+    border-top: 1px solid rgba(1, 23, 45, 0.10);
+    border-bottom: 1px solid rgba(1, 23, 45, 0.10);
+    @include flex;
+    justify-content: space-between;
+
+    @include breakpoint (max-xl){
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .footer-single-widget-3 {
+        margin-top: 30px;
+
+        .widget-title {
+            margin-bottom: 30px;
+        }
+
+        .footer-content {
+
+            p {
+                max-width: 522px;
+            }
+        }
+
+        .footer-list {
+            @include flex;
+            // justify-content: space-between;
+            gap: 50px;
+            margin-top: 70px;
+
+            @include breakpoint (max-lg){
+               gap: 30px;
+            }
+
+            @include breakpoint (max-md){
+                margin-top: 30px;
+                flex-wrap: wrap;
+            }
+
+            li {
+                a {
+                    color: $header-color-3;
+
+                    &:hover {
+                        color: $theme-color-3;
+                    }
+                }
+            }
+        }
+
+        .search-item {
+            @include flex;
+            gap: 10px;
+
+            .search-widget {
+                position: relative;
+                max-width: 440px;
+        
+                input {
+                    width: 100%;
+                    border: none;
+                    background-color: $white;
+                    position: relative;
+                    font-size: 16px;
+                    font-weight: 400;
+                    padding: 22px 30px;
+                    color: $text-color;
+                    border-radius: 35px;
+                    text-transform: capitalize;
+        
+        
+                    &::placeholder {
+                        color: $text-color;
+                    }
+                }
+            }
+
+            .icon {
+                width: 70px;
+                height: 70px;
+                line-height: 70px;
+                text-align: center;
+                background-color: $theme-color-3;
+                text-align: center;
+                border-radius: 100%;
+                color: $white;
+            }
+        }
+
+        .social-icon {
+            margin-top: 40px;
+            @include flex;
+            gap: 10px;
+
+            @include breakpoint (max-md){
+                flex-wrap: wrap;
+                margin-top: 30px;
+            }
+
+            h5 {
+                margin-right: 10px;
+            }
+            
+            a {
+                width: 44px;
+                height: 44px;
+                line-height: 44px;
+                display: inline-block;
+                text-align: center;
+                color: $header-color-3;
+                border: 1px solid rgba(1, 23, 45, 0.10);
+                border-radius: 100px;
+
+                &:hover {
+                    background-color: $theme-color-3;
+                    border: 1px solid $theme-color-3;
+                    color: $white;
+                }
+            }
+        }
+    }
+}
+
+.footer-bottom-3 {
+    padding: 35px 0;
+    border-top: 1px solid rgba(1, 23, 45, 0.10);
+
+    .footer-wrapper-3 {
+        @include flex;
+        justify-content: space-between;
+
+        @include breakpoint (max-md){
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+            text-align: center;
+        }
+
+        p {
+            &.span {
+                color: $theme-color-3;
+            }
+        }
+    }
+}
+
